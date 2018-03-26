@@ -17,7 +17,8 @@ Each yaml file contains data like that:
 
     plate_inverted_gt: false
   
-###Create xml files
+### 1.Create xml files
+
 Then I extracted relavant data in yaml files, and created xml files which are used for Faster RCNN training.  rea
 
 Usage:
@@ -25,7 +26,8 @@ Usage:
 Extract data and create xml files:
 
     python xml.py -i <input yaml dir> -o <output xml dir>
-    
+
+The structure of PASCAL VOC data set like that:
     
     └── VOC2007　
         ├── Annotations　　
@@ -43,3 +45,11 @@ Extract data and create xml files:
         ├── SegmentationClass　　
 
         └── SegmentationObject　　
+
+You have to put your xml files in Annotateions file. 
+
+### 2.Create txt files
+You have to create 4 txt files, including trainval.txt, test.txt, train.txt, val.txt and put them into ./VOC2007/ImageSets/Main .
+
+You can use sort_txt.m to create these 4 txt files.
+
