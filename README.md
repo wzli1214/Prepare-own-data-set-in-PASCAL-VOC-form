@@ -16,12 +16,30 @@ Each yaml file contains data like that:
     plate_number_gt: g0v931                 #license plate number
 
     plate_inverted_gt: false
-  
-
-Then I extracted relavant data in yaml files, and created xml files which are used for Faster RCNN training.  
+  
+###Create xml files
+Then I extracted relavant data in yaml files, and created xml files which are used for Faster RCNN training.  rea
 
 Usage:
 
 Extract data and create xml files:
 
     python xml.py -i <input yaml dir> -o <output xml dir>
+    
+    
+    └── VOC2007　
+        ├── Annotations　　
+
+        ├── ImageSets　　
+
+        │   ├── Layout　　
+
+        │   ├── Main　　
+
+        │   └── Segmentation　　
+
+        ├── JPEGImages　　
+
+        ├── SegmentationClass　　
+
+        └── SegmentationObject　　
